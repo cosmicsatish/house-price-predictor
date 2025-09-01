@@ -94,8 +94,10 @@ Access the MLflow UI at [http://localhost:5555](http://localhost:5555)
 If you prefer an interactive experience, launch JupyterLab with:
 
 ```bash
+uv pip install jupyterlab
 uv python -m jupyterlab
 # or
+uv pip install jupyterlab
 python -m jupyterlab
 ```
 
@@ -156,7 +158,7 @@ curl -X POST "http://localhost:8000/predict" \
   "bathrooms": 2,
   "location": "suburban",
   "year_built": 2000,
-  "condition": fair
+  "condition": "Fair"
 }'
 
 ```
